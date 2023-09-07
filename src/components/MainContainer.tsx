@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Form from './Form';
 
 export default function MainContainer() {
   return (
-    <div className='h-full w-full bg-black'>
-        
+    <div className="relative flex items-center justify-center bg-black h-screen w-screen overflow-hidden">
+      <Form/>
     </div>
-  )
+  );
 }

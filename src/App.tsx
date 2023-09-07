@@ -4,7 +4,7 @@ import MainContainer from "./components/MainContainer"
 function App() {
 
   return (
-    <div id="app-cont" className="">
+    <div id="app-cont" className="max-h-screen overflow-hidden">
       <Nav/>
       <MainContainer/>
     </div>
