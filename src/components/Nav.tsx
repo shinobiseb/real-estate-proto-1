@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 export default function Nav() {
   return (
     <nav className='px-5 flex items-center justify-between w-full h-10 z-10'>
-      <h3 className='text-2xl'>Mi Vistas</h3>
+      <h2 className='text-2xl'>Mi Vistas</h2>
       <ul className='flex sm:w-1/2 justify-between'>
         <li>Comprar</li>
         <li>Vender</li>
