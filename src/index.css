@@ -38,16 +38,16 @@ h3 {
 }
 
 .button-gallery {
-    height: 30%;
     width: 90%;
     display: flex;
     flex-direction: column;
 }
+
 
 .gal-div {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
-
 }
+
