@@ -1,10 +1,10 @@
 
-  type welcomeProps = {
+  type propsType = {
     setPage : Function;
     page : any;
   }
 
-export default function Welcome(setPage : welcomeProps) {
+export default function Welcome(setPage : propsType) {
 
   const click =()=> {
     setPage.setPage(setPage.page + 1)

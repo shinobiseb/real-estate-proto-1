@@ -1,5 +1,14 @@
+  type propsType = {
+    setPage : Function;
+    page : any;
+  }
 
-export default function Form2() {
+export default function Form2( setPage : propsType) {
+
+      const click =()=> {
+    setPage.setPage(setPage.page + 1)
+  }
+
   return (
     <div className='shadow-lg min-w-[768px] w-2/5 h-4/5 bg-white z-10 border-solid rounded-md p-10 flex flex-col items-center justify-center'>
       <h3>Anything Else?</h3>
@@ -24,7 +33,7 @@ export default function Form2() {
           <button className='button'>JACUZZI</button>
         </div>
       </div>
-      <button className="button mt-10">NEXT</button>
+      <button onClick={()=> click()} className="button mt-10">NEXT</button>
     </div>
   )
 }
