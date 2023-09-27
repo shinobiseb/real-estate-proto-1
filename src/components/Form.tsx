@@ -1,5 +1,9 @@
+  type formProps = {
+    setPage : Function;
+  }
 
-export default function Form() {
+export default function Form(props : formProps) {
+  
   return (
     <div className='shadow-lg min-w-[768px] w-2/5 h-4/5 bg-white z-10 border-solid rounded-md p-10 flex flex-col items-center justify-evenly '>
       <h3 className=''>What are you looking for?</h3>

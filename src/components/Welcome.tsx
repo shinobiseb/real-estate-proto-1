@@ -1,14 +1,13 @@
 
-  type searchButton = {
+  type welcomeProps = {
     setPage : Function;
-    page : Number;
+    page : any;
   }
 
-export default function Welcome(setPage : searchButton) {
+export default function Welcome(setPage : welcomeProps) {
 
-  const click =( setPage: searchButton)=> {
-    setPage.setPage()
-    console.log(setPage.page)
+  const click =()=> {
+    setPage.setPage(setPage.page + 1)
   }
 
   return (
@@ -16,7 +15,7 @@ export default function Welcome(setPage : searchButton) {
         <h1 className='text-white text-9xl font-bold font-sans'>WELCOME!</h1>
         <button 
         className="text-white text-2xl p-2 w-60 rounded-full bg-light-pink hover:bg-white hover:text-light-pink transition-all"
-        onClick={()=> click(setPage)}
+        onClick={()=> click()}
         >Buscar</button>
     </div>
   )
