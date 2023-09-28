@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Welcome from './Welcome';
 import Form from './Form';
 import Form2 from './Form2';
+import Gallery from './Gallery';
 
 export default function MainContainer() {
   const [page, setPage] = useState(0);
@@ -14,8 +15,14 @@ export default function MainContainer() {
     content = <Form setPage={setPage} page={page}/>;
   } else if (page === 2) {
     content = <Form2 setPage={setPage} page={page}/>;
-  } else {
-    content = <h3 className='text-white text-3xl'>Page not found</h3>; // Handle unexpected values
+  } else if (page === 3) {
+    content = <Gallery setPage={setPage} page={page}/>;
+  }
+  
+    else {
+    content = <Welcome setPage={setPage} page={page}/>; 
+    setPage(0)
+    // Handle unexpected values
   }
 
   console.log(page)

@@ -33,7 +33,7 @@ export default function Form2( setPage : propsType) {
           <button className='button'>JACUZZI</button>
         </div>
       </div>
-      <button onClick={()=> click()} className="button mt-10">NEXT</button>
+      <button className='mt-10 bg-light-pink rounded-full px-10 py-1 text-white' onClick={()=>click()}>Next</button>
     </div>
   )
 }
