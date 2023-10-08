@@ -10,7 +10,7 @@ export default function Form(setPage : propsType) {
   }
   
   return (
-    <div className='shadow-lg min-w-[768px] w-2/5 h-4/5 bg-white z-10 border-solid rounded-md p-10 flex flex-col items-center justify-evenly '>
+    <div id="Form1" className='shadow-lg min-w-[768px] w-2/5 h-4/5 bg-white z-10 border-solid rounded-md p-10 flex flex-col items-center justify-evenly '>
       <h3 className=''>What are you looking for?</h3>
       <div className='button-gallery'>
         <div className='gal-div'>
@@ -39,7 +39,7 @@ export default function Form(setPage : propsType) {
         </select>
       </div>
 
-      <div className="money-div p-5 w-full items-center justify-center flex flex-col">
+      <div  className="money-div p-5 w-full items-center justify-center flex flex-col">
         <h3>How Much</h3>
         <div className="slide-container ">
           <input type="range" min="1" max="10" value="50" className="slider bg-light-pink" id="myRange"></input>

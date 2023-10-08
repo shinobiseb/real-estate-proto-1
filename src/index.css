@@ -56,3 +56,37 @@ h3 {
     appearance: none;
     border-radius: 10px;
 }
+
+#Gallery {
+    transition: 250ms;
+    animation-name: onLoad;
+    animation-duration: 250ms;
+}
+
+#Form1 {
+    transition: 250ms;
+    animation-name: onLoad;
+    animation-duration: 250ms;
+}
+
+#Form2 {
+    transition: 250ms;
+    animation-name: onLoad;
+    animation-duration: 250ms;
+}
+
+#Welcome {
+    transition: 250ms;
+    animation-name: onLoad;
+    animation-duration: 250ms;
+}
+
+@keyframes onLoad {
+    from {
+        translate: -2500px;
+    }
+
+    to {
+        translate: 0px;
+    }
+}
